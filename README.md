@@ -6,9 +6,9 @@ Connectez le payload et prendre le contrôle à distance de la machine cible dep
 
 Prérequis :
 
-Désactivez Windows Defender.
-Lancez PowerShell en tant qu'administrateur.
-Tapez la commande encodée en base64.
+- Désactivez Windows Defender.
+- Lancez PowerShell en tant qu'administrateur.
+- Tapez la commande encodée en base64.
 
 ## Commande côté serveur
 
